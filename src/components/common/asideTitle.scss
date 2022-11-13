@@ -1,0 +1,23 @@
+@use "../../style/base";
+
+.AsideTitle_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    width: 50px;
+    background-color: base.$primary_color;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3.3rem;
+    color: #fff;
+  }
+  h2 {
+    width: calc(100% - 70px);
+    border-bottom: 1px solid #aaa;
+    font-size: 1.2rem;
+    color: base.$primary_color;
+    padding-bottom: 0.5rem;
+  }
+}

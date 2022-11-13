@@ -1,0 +1,39 @@
+$primary_color: #cd2122;
+
+$text_color1: #575757;
+$text_color2: #757575;
+
+$text_dark: #232323;
+
+$padding_x_desktop: 14%;
+$padding_x_tablet: 8%;
+
+$margin_top_desktop: 4rem;
+
+@mixin twoPartBorder {
+  position: relative;
+  width: 100%;
+  div {
+    position: absolute;
+    width: 47%;
+    height: 1px;
+    background-color: #aaa;
+    bottom: 0;
+    &:nth-child(1) {
+      right: 0;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background-color: $primary_color;
+        left: 0;
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+    }
+    &:nth-child(2) {
+      left: 0;
+    }
+  }
+}

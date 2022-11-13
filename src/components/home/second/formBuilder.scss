@@ -1,0 +1,53 @@
+@use "../../../style/base";
+
+.FormBuilder_container {
+  margin-top: base.$margin_top_desktop;
+  padding: 0 base.$padding_x_desktop;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .formbuilder {
+    width: 50%;
+    h2 {
+      color: base.$text_dark;
+      font-size: 2rem;
+      span {
+        color: base.$primary_color;
+      }
+    }
+    & > span {
+      display: block;
+      margin-top: 1.5rem;
+      color: base.$text_color1;
+    }
+    p {
+      color: base.$text_color2;
+      font-size: 0.9rem;
+      line-height: 2.2rem;
+      font-weight: 300;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .list {
+    width: 45%;
+    span {
+      color: base.$text_color1;
+      display: block;
+      margin: 1.5rem 0;
+    }
+    ul {
+      list-style: decimal;
+      li {
+        color: base.$text_color2;
+        font-size: 0.7rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+  .properties {
+    width: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+@use "../../../style/base";
+.MobileApplication_container {
+  margin-top: base.$margin_top_desktop;
+  padding: 0 base.$padding_x_desktop;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .details {
+    width: 49%;
+    & > h2 {
+      font-size: 1.9rem;
+      line-height: 3rem;
+      color: base.$text_dark;
+      span {
+        color: base.$primary_color;
+      }
+    }
+    p {
+      line-height: 2.5rem;
+      color: base.$text_color1;
+      margin: 1.5rem 0;
+      text-align: justify;
+    }
+    .title {
+      margin-top: 2rem;
+    }
+    & > span {
+      display: block;
+      margin: 1.5rem 0;
+      color: base.$text_color2;
+    }
+    ul {
+      list-style: none;
+      li {
+        color: base.$text_color2;
+        margin-top: 0.85rem;
+        font-size: 0.85rem;
+      }
+    }
+  }
+  .image {
+    width: 47%;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "../../../style/base";
+.TitleBanner_container {
+  margin-top: base.$margin_top_desktop;
+  text-align: center;
+  h3 {
+    padding: 0 base.$padding_x_desktop;
+    padding-bottom: 1rem;
+    color: base.$text_dark;
+    font-size: 1.6rem;
+  }
+  .twoPartBorder {
+    @include base.twoPartBorder;
+  }
+  p {
+    padding: 0 base.$padding_x_desktop;
+    padding-top: 1rem;
+    color: base.$text_color2;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+  }
+}
