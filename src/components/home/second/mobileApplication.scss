@@ -5,6 +5,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   .details {
     width: 49%;
     & > h2 {
@@ -43,5 +44,8 @@
     img {
       width: 100%;
     }
+  }
+  .properties {
+    width: 100%;
   }
 }

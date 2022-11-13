@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./mobileApplication.scss";
 import imgMobile from "../../../assets/images/اپلیکیشن-گراف-BPMS.webp";
 import AsideTitle from "../../common/AsideTitle";
 import SectionProperties from "../../common/SectionProperties";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MobileApplication = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="MobileApplication_container">
       <div className="details">
-        <h2>
+        <h2 data-aos-offset="0" data-aos-delay={"1000"} data-aos="fade-left">
           اپلیکیشن موبایل <span>Android,IOS</span>
         </h2>
-        <p>
+        <p data-aos-offset="0" data-aos-delay={"1000"} data-aos="fade-left">
           امروزه با گسترش استفاده از ابزارهای ارتباطی هوشمند مانند تلفن همراه و
           تبلت،وجود برنامه هایی که بتوانند در کنار وجود نسخه های دسکتاپ روی این
           ابزارها هم قابلیت اجراء داشته باشند بیش از پیش محسوس است. از این رو
@@ -19,7 +24,12 @@ const MobileApplication = () => {
           تست های فنی لازم، توانسته است نرم افزار نظارت ، بازرسی و مدیریت کار
           همراه را به متقاضیان ارائه نماید.
         </p>
-        <div className="title">
+        <div
+          className="title"
+          data-aos-offset="0"
+          data-aos-delay={"1000"}
+          data-aos="fade-left"
+        >
           <AsideTitle title={"راهکارهای اپلیکیشن مدیریت کار همراه"} />
         </div>
         <span>
@@ -34,10 +44,20 @@ const MobileApplication = () => {
           <li>مدیریت کار همراه </li>
         </ul>
       </div>
-      <div className="image">
+      <div
+        className="image"
+        data-aos-offset="0"
+        data-aos-delay={"1000"}
+        data-aos="fade-left"
+      >
         <img src={imgMobile} alt="imgMobile" />
       </div>
-      <div className="properties">
+      <div
+        className="properties"
+        data-aos-offset="0"
+        data-aos-delay={"1000"}
+        data-aos="fade-left"
+      >
         <SectionProperties title={"ویژگی های کلیدی اپلیکیشن موبایل"} />
       </div>
     </div>
